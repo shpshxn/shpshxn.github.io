@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>Єквиток 🇺🇦</title>
+    <link rel="icon" href="favicon.png" sizes="32x32" type="image/png">
+    <link rel="stylesheet" href="index.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- banner -->
+    <div id="banner">
+        <div id="btextcontainer">
+                <div id="bheader">
+                    <div id="blogo">
+                        <img src="logo.png" id="logo">
+                    </div>
+                </div>
+            <h1 id="bheading">
+            	Усі шляхи<br>
+            	відкриті перед тобою.
+            </h1>
+            <p class="paragraph" id="bparagraph">
+                Єквиток! - можливість замовити квитки на перевезення <br>
+                у будь-який напрямок не виходячи з будинку! 
+            </p>
+            <div id="bbtns">
+                <button class="bbtn" id="bbtn1" onClick="document.getElementById('ticket').scrollIntoView();">я пасажир</button>
+                <button class="bbtn" onClick="document.getElementById('drivercontainer').scrollIntoView();">я перевізник</button>
+            </div>
+            <p align="center" class="paragraph" id="blast">Швидко та надійно</p>
+        </div>
+    </div>
+    <div id="dslide"><button id="slide" onClick="document.getElementById('pluses').scrollIntoView();"></button></div>
+    <!-- плюси -->
+    <div id="pluses">
+        <div id="pluscontainer">
+            <div class="plus">
+                <img src="iconqual.png" id="iconqual">
+                <h3 align="center" class="hplus">Якість</h3>
+                <p class="pp">Кожен автобус забезпечений<br>
+                усіма необхідними елементами<br>
+                для кофмортної поїздки</p>
+            </div>
+            <div class="plus">
+                <img src="iconbus.png" class="iconplus">
+                <h3 align="center" class="hplus">Швидкість</h3>
+                <p class="pp">Автобуси прибувають вчасно<br>
+                та ніколи не запізнюються</p>
+                <button class="bbtn" id="slidebtn1" onClick="document.getElementById('ticket').scrollIntoView();">перейти до покупки квитків</button>
+            </div>
+            <div class="plus">
+                <img src="iconcash.png" class="iconplus">
+                <h3 align="center" class="hplus">Без готівки</h3>
+                <p class="pp">Повністю безготівковий процес<br>
+                оплати, для вашої зручності</p>
+            </div>
+        </div>
+        
+    </div>
+    <main>
+    <section id="ticket">
+        <h1 id="ticketheading" align="center">Оберіть напрямок та дату</h1>
+        <form id="ticketForm">
+            <div class="form-group">
+                <p class="tinputp">Виїзжаємо з</p>
+                <select id="fromInput" class="inputform" required>
+                    <option value="" disabled selected>Виберіть місто відправлення</option>
+                    <option value="Київ">Київ</option>
+                    <option value="Львів">Львів</option>
+                    <!-- Додайте інші міста виїзду -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="tinputp">Куди?</p>
+                <select id="toInput" class="inputform" required>
+                    <option value="" disabled selected>Виберіть місто призначення</option>
+                    <option value="Харків">Харків</option>
+                    <option value="Одеса">Одеса</option>
+                    <!-- Додайте інші міста призначення -->
+                </select>
+            </div>
+
+            <div class="form-group">
+                <p class="tinputp">Коли?<p>
+                <input type="date" id="dateInput" required>
+            </div>
+
+            <button type="submit" id="ticketbtn">знайти квитки</button>
+        </form>
+    </section>
+
+    <section id="resultsSection" style="display: none;">
+        <div id="resultsContainer"></div>
+    </section>
+    </main>
+    <div id="transit">
+    </div>
+    <script src="script.js"></script>
+
+    <!-- contact -->
+    <div id="driver">
+        <div id="drivercontainer">
+                <div id="drivertext">
+                    <h1 id="dheading">Ви перевізник?</h1>
+                    <p class="driverp">
+                        Ми готові співпрацювати з хорошими перевізниками,
+                        <br>та надавати їм комфортні умови для праці.
+                        <br>Внесіть свої данні у форму, і наш консультант звяжеться з вами.<br>
+                    </p>
+                    <p class="driverp">
+                        <br>ел. адреса : ekvytok@gmail.com<br>
+                        номер телефону : (097) 777 71 66<br>
+                        адреса : 4826 Львів, вул. В. Великого, 47
+                    </p>
+                </div>
+                <div class="driverform">
+                    <form>
+                    	<div id="row">
+	                        <div class="dinput">
+	                            <p class="inputp">Ім'я</p>
+	                            <input type="name" class="dinputform">
+	                        </div>
+	                        <div class="dinput">
+	                            <p class="inputp">Електронна адреса</p>
+	                            <input type="email" class="dinputform">
+	                        </div>
+	                    </div>
+	                    <div class="dmessage">
+	                        <p class="inputp">Коментар</p>
+	                        <textarea type="text" class="dmesinput"> </textarea>
+	                    </div>
+                        <button class="bbtn" id="dbtn">Надіслати</button>
+                    </form>
+                </div>
+        </div>
+    </div>
+    <!-- footer -->
+	<div id="copyright">
+    	<p id="fparagraph">
+            Copyright ТОВ "Єквиток" 2023 , Львів.
+        </p>
+    </div>
+</body>
+</html>

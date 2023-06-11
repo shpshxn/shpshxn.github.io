@@ -1,0 +1,350 @@
+* {margin: 0; padding: 0;}
+html {
+    scroll-behavior: smooth;
+   }
+#banner {
+    background-size: cover;
+    background-image: url(banner.png);
+    width: 100%;
+    height: 600px;
+}
+#btextcontainer {
+    color: aliceblue;
+    padding-top: 70px;
+    padding-left: 133px;
+    width: 80%;
+}
+h1 {
+    font-family: Inter;
+    font-weight: 1000;
+}
+#bheader {
+    display: flex;
+    padding: 0px;
+    width: 85%;
+}
+#blogo {
+    width: 155px;
+    margin-left: 110%;
+    margin-top: -20px;
+}
+#logo {
+    width: 155px;
+    height: 100px;
+}
+#bheading {
+    font-size: 350%;
+    margin-top: 50px;
+    margin-bottom: 60px
+}
+#bparagraph {
+    margin-top: -40px;
+    padding-bottom: 20px;
+}
+p {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 100%;
+    font-weight: 100;
+}
+#bbtns {
+    margin-top: 15px;
+    display: flex;
+    justify-content: center;
+}
+button {
+    cursor: pointer;
+    background-color: #0f1629;
+    color: #ddf2ff;
+    width: 200px;
+    font-size: 110%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.2s;
+    font-weight: 100;
+}
+
+.bbtn {
+    width: 170px;
+    height: 55px;
+    background-color: rgb(222, 226, 255);
+    border-radius: 30px;
+    font-family: Inter;
+    font-weight: 500;
+    font-size: 125%;
+    border: none;
+    color: rgb(0, 10, 100);
+    margin: 10px;
+    font-weight: 100;
+    transition: all 0.2s;
+}
+.bbtn:hover {
+    background-color: rgb(222, 226, 255);
+    scale: 101%;
+}
+#slide {
+    background-size: cover;
+    background-image: url(slide.png);
+    width: 50px;
+    height: 30px;
+    border: none;
+    background-color: white;
+    margin-top: 10px;
+    animation-name: example;
+    animation-duration: 1.5s;
+    animation-delay: 0s;
+    animation-iteration-count: infinite;
+}
+@keyframes example {
+    0% {scale: 100%;}
+    50% {scale: 110%;}
+    100% {scale: 100%;}
+  }
+#dslide {
+    display: flex;
+    justify-content: center;
+}
+#driver {
+    background-size: cover;
+    background-image: url(driver.png);
+    width: 100%;
+    height: 450px;
+}
+#drivercontainer {
+    display: flex;
+    height: 350px;
+    padding-top: 100px;
+    padding-bottom: 50px;    
+}
+#drivertext {
+    color: white;
+    padding-left: 100px;
+}
+.driverp {
+    font-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    text-shadow: 1px 1px 10px black;
+}
+.driverform {
+    margin-left: 100px;
+}
+#row {
+    display: flex;
+}
+.dinput {
+    margin-right: 50px;
+}
+#dheading {
+    margin-bottom: 10px;
+}
+.dinputform {
+    background: none;
+    border: solid 1px rgb(73, 243, 255);
+    border-radius: 5px;
+    width: 250px;
+    height: 35px;
+    font-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+.dmesinput {
+    background: none;
+    border: solid 1px rgb(73, 243, 255);
+    border-radius: 5px;
+    width: 555px;
+    height: 80px;
+    font-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    color: white;
+}
+.inputp {
+    color:rgb(73, 243, 255);
+    margin-bottom: 5px;
+    font-size: 110%;
+}
+#dbtn {
+    background-color: rgb(73, 243, 255);
+    color: rgb(0, 0, 59);
+    width: 559px;
+    font-size: 110%;
+    height: 50px;
+    margin-top: 20px;
+    margin-left: 0px;
+}
+
+#copyright {
+    background: #0f1629;
+    padding: 2rem 3rem;
+}
+.paragraph {
+    font-size: 130%;
+}
+#blast {
+    margin-top: 17px;
+}
+#fparagraph {
+    color: white;
+    font-size: 100%;
+    text-shadow: none;
+}
+/* тест */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px;
+    text-align: center;
+}
+
+main {
+    padding: 20px;
+}
+
+h1, h2 {
+    margin-top: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    max-width: 400px;
+    margin: 0 auto;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+label {
+    font-weight: bold;
+}
+button {
+
+}
+select, input[type="date"] {
+    width: 377px;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    border: solid 1px rgb(73, 243, 255);
+    font-size: 85%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+
+main {
+    background-image: url(bannerticket.png);
+}
+
+#resultsContainer {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.ticket-card {
+    width: 370px;
+    margin: 10px;
+    padding: 20px;
+    background-color: #f9f9f9;
+    border: 1px solid rgb(73, 243, 255);
+    border-radius: 4px;
+}
+
+.ticket-card h3 {
+    margin-top: 0;
+}
+
+.ticket-card p {
+    margin-bottom: 0;
+}
+.tinputp {
+    text-shadow: none;
+
+}
+.inputform {
+    width: 400px;
+    border: solid 1px rgb(73, 243, 255);
+    font-size: 110%;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+}
+#ticketbtn {
+    background-color: #0f1629;
+    color: #ddf2ff;
+    width: 400px;
+    font-size: 110%;
+    height: 50px;
+    margin-top: 10px;
+    margin-left: 0px;
+    border-radius: 25px;
+    border: none;
+    transition: all 0.2s;
+    font-weight: 100;
+}
+#ticketbtn:hover {
+    background-color: #131b33;
+    scale: 101%;
+}
+#ticketheading {
+    font-size: 230%;
+    padding-bottom: 50px;
+    padding-top: 30px;
+    color: #334f5c;
+    font-weight: 900;
+    font-family: Inter;
+}
+#transit {
+    height: 250px;
+    background-color: #ddf2ff;
+}
+h3 {
+    font-family: inter;
+}
+#pluscontainer {
+    display: flex;
+    justify-content: center;
+}
+.iconplus {
+    width: 100px;
+    height: 100px;
+    object-fit: scale-down;
+    margin-left: 80px;
+    margin-bottom: 10px;
+}
+#iconqual {
+    width: 80px;
+    height: 80px;
+    object-fit: scale-down;
+    margin-left: 98px;
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+#pluses {
+    height: 600px;
+}
+#pluscontainer {
+    height: 300px;
+    padding: 100px;
+}
+.plus {
+    padding: 50px;
+}
+.hplus {
+    margin-bottom: 10px;
+    font-size: 150%;
+    color: #334f5c;
+}
+#slidebtn1 {
+    margin-top: 100px;
+    margin-left: 25px;
+    color: #334f5c;;
+    width: 230px;
+}
+.pp {
+    font-size: 130%;
+    font-weight: 300;
+}
